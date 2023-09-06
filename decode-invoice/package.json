@@ -1,0 +1,18 @@
+{
+  "name": "decode-invoice",
+  "version": "0.0.1",
+  "description": "Returns the amount in millisatoshis of a lightning invoice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run"
+  },
+  "author": "Kishin Kato",
+  "license": "ISC",
+  "keywords": [],
+  "node-red": {
+    "nodes": {
+      "invoice-amount": "invoiceAmount.js"
+    }
+  }
+}

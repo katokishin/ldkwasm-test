@@ -1,0 +1,19 @@
+[package]
+name = "ldkwasm-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# Set crate type to cdylib to compile to C dynamic library for WASM compilation
+[lib]
+crate-type = ["cdylib"]
+
+# Wasm-bindgen enables us to bind Rust functions to JS
+[dependencies]
+wasm-bindgen = "0.2.87"
+lightning-invoice = { version = "0.24.0" }
+
+# Link time optimization to produce better optimized code
+[profile.release]
+lto = true

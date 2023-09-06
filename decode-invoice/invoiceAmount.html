@@ -1,0 +1,24 @@
+<script type="text/javascript">
+  RED.nodes.registerType('invoice-amount', {
+    category: 'function',
+    color: '#AA2222',
+    defaults: {
+      name: {value: ""}
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "font-awesome/fa-calculator",
+    label: function() { return this.name || "Invoice Amount";}
+  });
+</script>
+
+<script type="text/html" data-help-name="invoice-amount">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="invoice-amount">
+  <p>This node gets the amount of a lightning invoice in msats</p>
+</script>
