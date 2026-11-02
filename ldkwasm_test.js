@@ -22,7 +22,7 @@ function passArray8ToWasm0(arg, malloc) {
 * @param {Uint8Array} invoice
 * @returns {bigint}
 */
-module.exports.decode_invoice_amount = function(invoice) {
+module.exports.decode_invoice_amount = function (invoice) {
     const ptr0 = passArray8ToWasm0(invoice, wasm.__wbindgen_malloc);
     const len0 = WASM_VECTOR_LEN;
     const ret = wasm.decode_invoice_amount(ptr0, len0);
@@ -36,4 +36,3 @@ const wasmModule = new WebAssembly.Module(bytes);
 const wasmInstance = new WebAssembly.Instance(wasmModule, imports);
 wasm = wasmInstance.exports;
 module.exports.__wasm = wasm;
-
