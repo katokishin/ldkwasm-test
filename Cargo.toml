@@ -11,7 +11,7 @@ crate-type = ["cdylib"]
 
 # Wasm-bindgen enables us to bind Rust functions to JS
 [dependencies]
-wasm-bindgen = "0.2.87"
+wasm-bindgen = "0.2.100"
 lightning-invoice = { version = "0.24.0" }
 
 # Link time optimization to produce better optimized code

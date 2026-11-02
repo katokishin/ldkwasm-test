@@ -2,7 +2,10 @@
   "name": "decode-invoice",
   "version": "0.0.1",
   "description": "Returns the amount in millisatoshis of a lightning invoice",
-  "main": "index.js",
+  "main": "invoiceAmount.js",
+  "engines": {
+    "node": ">=26.12.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run"
